@@ -21,17 +21,17 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 from bot import bot, user, bot_name, config_dict, user_data, botStartTime, LOGGER, Interval, DATABASE_URL, QbInterval, INCOMPLETE_TASK_NOTIFIER, scheduler, bot_cache
 from bot.version import get_version
-from .helper.nordbotz_utils.metadata import start_cleanup, clean_all, exit_clean_up
-from .helper.ext_utils.bot_utils import get_readable_time, cmd_exec, sync_to_async, new_task, set_commands, update_user_ldata, get_stats
-from .helper.ext_utils.db_handler import DbManger
-from .helper.telegram_helper.bot_commands import BotCommands
-from .helper.telegram_helper.message_utils import sendMessage, editMessage, editReplyMarkup, sendFile, deleteMessage, delete_all_messages
-from .helper.telegram_helper.filters import CustomFilters
-from .helper.telegram_helper.button_build import ButtonMaker
-from .helper.listeners.aria2_listener import start_aria2_listener
-from .helper.themes import BotTheme
+from bot.helper.nordbotz_utils.metadata import start_cleanup, clean_all, exit_clean_up
+from bot.helper.ext_utils.bot_utils import get_readable_time, cmd_exec, sync_to_async, new_task, set_commands, update_user_ldata, get_stats
+from bot.helper.ext_utils.db_handler import DbManger
+from bot.helper.telegram_helper.bot_commands import BotCommands
+from bot.helper.telegram_helper.message_utils import sendMessage, editMessage, editReplyMarkup, sendFile, deleteMessage, delete_all_messages
+from bot.helper.telegram_helper.filters import CustomFilters
+from bot.helper.telegram_helper.button_build import ButtonMaker
+from bot.helper.listeners.aria2_listener import start_aria2_listener
+from bot.helper.themes import BotTheme
 from bot.helper.nordbotz_utils.react_nordbotz import send_react
-from .modules import authorize, clone, gd_count, gd_delete, gd_list, cancel_mirror, mirror_leech, status, torrent_search, torrent_select, ytdlp, \
+from bot.modules import authorize, clone, gd_count, gd_delete, gd_list, cancel_mirror, mirror_leech, status, torrent_search, torrent_select, ytdlp, \
                      rss, shell, eval, users_settings, bot_settings, speedtest, save_msg, images, imdb, anilist, mediainfo, mydramalist, gen_pyro_sess, \
                      gd_clean, broadcast, category_select
 
